@@ -1,0 +1,25 @@
+platform :ios, '9.0'
+use_frameworks!
+ 
+target 'SowingmapDemo' do
+    pod 'RxDataSources'
+    pod 'RxAlamofire'
+    pod 'RxWebKit'
+    pod 'RxKeyboard'
+    pod 'CocoaLumberjack/Swift'
+    pod 'Kingfisher', '~> 4.0'
+    pod 'SwiftyJSON'
+    pod 'Gloss'
+    pod 'TagListView'
+    pod 'PKHUD'
+    pod 'SwiftDate'
+    pod 'SlideMenuControllerSwift'
+    pod 'youtube-ios-player-helper'
+    pod 'GoogleMaps'
+    pod 'SnapKit'
+    pod 'RealmSwift'
+    pod 'MJRefresh'
+    pod 'CryptoSwift'
+    pod 'RSBarcodes'
+
+end

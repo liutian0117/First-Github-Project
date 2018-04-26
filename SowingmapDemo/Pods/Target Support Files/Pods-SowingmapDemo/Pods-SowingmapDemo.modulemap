@@ -1,0 +1,6 @@
+framework module Pods_SowingmapDemo {
+  umbrella header "Pods-SowingmapDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

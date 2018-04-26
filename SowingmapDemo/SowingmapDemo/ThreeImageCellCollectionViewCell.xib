@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ThreeImageCellCollectionViewCell" id="gTV-IL-0wX" customClass="ThreeImageCellCollectionViewCell" customModule="SowingmapDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="125" height="168"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="125" height="168"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JwI-ls-KX8">
+                        <rect key="frame" x="4" y="4" width="117" height="117"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="117" id="Q0B-pr-z73"/>
+                            <constraint firstAttribute="height" constant="117" id="VEG-NQ-2kl"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="埼玉産お宝フルーツ宝フルーツを召し上..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wi-Zd-YYL">
+                        <rect key="frame" x="6" y="127" width="113" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="bG3-TP-U6Z"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="JwI-ls-KX8" secondAttribute="trailing" constant="4" id="IwT-uC-MS8"/>
+                <constraint firstItem="JwI-ls-KX8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="L8h-dr-M4J"/>
+                <constraint firstItem="7wi-Zd-YYL" firstAttribute="top" secondItem="JwI-ls-KX8" secondAttribute="bottom" constant="6" id="Mlc-wt-nnZ"/>
+                <constraint firstItem="JwI-ls-KX8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="VEN-HK-u3M"/>
+                <constraint firstItem="7wi-Zd-YYL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="6" id="ccM-ie-Jqm"/>
+                <constraint firstAttribute="trailing" secondItem="7wi-Zd-YYL" secondAttribute="trailing" constant="6" id="g8t-gD-yFW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="IconImg" destination="JwI-ls-KX8" id="LDx-ZO-Xi0"/>
+                <outlet property="TitleLab" destination="7wi-Zd-YYL" id="65V-2B-vlR"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="52"/>
+        </collectionViewCell>
+    </objects>
+</document>

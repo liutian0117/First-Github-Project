@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--パスワード再設定-->
+        <scene sceneID="ZH7-8D-Q67">
+            <objects>
+                <viewController storyboardIdentifier="SecondTable" title="パスワード再設定" id="OPj-CA-Hzb" customClass="SecondTable" customModule="LoginView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dW4-r3-kTM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Vue-TA-ocL">
+                                <rect key="frame" x="0.0" y="20" width="375" height="597"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhF-up-13C">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <state key="normal" title="前のページに戻る"/>
+                                <connections>
+                                    <action selector="BackButtonClick:" destination="OPj-CA-Hzb" eventType="touchUpInside" id="sSb-6r-cHF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Vue-TA-ocL" firstAttribute="bottom" secondItem="YCI-8l-5YJ" secondAttribute="bottom" constant="-50" id="7Yv-hE-TYM"/>
+                            <constraint firstItem="Vue-TA-ocL" firstAttribute="leading" secondItem="YCI-8l-5YJ" secondAttribute="leading" id="Ihv-Wt-isb"/>
+                            <constraint firstItem="yhF-up-13C" firstAttribute="top" secondItem="Vue-TA-ocL" secondAttribute="bottom" id="T7w-y1-L2n"/>
+                            <constraint firstItem="YCI-8l-5YJ" firstAttribute="trailing" secondItem="Vue-TA-ocL" secondAttribute="trailing" id="dgR-s8-WSI"/>
+                            <constraint firstItem="YCI-8l-5YJ" firstAttribute="trailing" secondItem="yhF-up-13C" secondAttribute="trailing" id="tAQ-Zc-NVa"/>
+                            <constraint firstItem="YCI-8l-5YJ" firstAttribute="bottom" secondItem="yhF-up-13C" secondAttribute="bottom" id="u91-rq-B7e"/>
+                            <constraint firstItem="Vue-TA-ocL" firstAttribute="top" secondItem="YCI-8l-5YJ" secondAttribute="top" id="xQN-Y1-s48"/>
+                            <constraint firstItem="yhF-up-13C" firstAttribute="leading" secondItem="YCI-8l-5YJ" secondAttribute="leading" id="y0C-YS-G0Y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YCI-8l-5YJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="BackButton" destination="yhF-up-13C" id="ZhA-Mh-P6n"/>
+                        <outlet property="SecondTable" destination="Vue-TA-ocL" id="3Po-H3-OCz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Afs-qg-HeP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="212" y="-204.64767616191907"/>
+        </scene>
+    </scenes>
+</document>

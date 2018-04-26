@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ThreeImageSlideViewController-->
+        <scene sceneID="EvT-sy-pys">
+            <objects>
+                <viewController storyboardIdentifier="ThreeImageSlideViewController" title="ThreeImageSlideViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cWF-li-v1N" customClass="ThreeImageSlideCellViewController" customModule="SowingmapDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2yg-eH-7VZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JPk-31-BZc">
+                                <rect key="frame" x="19" y="208.5" width="337" height="250"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="eRN-v8-rSu"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="OcT-pI-kRz">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAK-tH-QOT">
+                                <rect key="frame" x="327" y="309.5" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="9Po-LQ-YN4"/>
+                                    <constraint firstAttribute="width" constant="48" id="d40-4n-2Ef"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="rightSlideBtnClick:" destination="cWF-li-v1N" eventType="touchUpInside" id="IuE-da-nk7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cR-qS-4mJ">
+                                <rect key="frame" x="0.0" y="309.5" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="BZW-52-hZb"/>
+                                    <constraint firstAttribute="height" constant="48" id="dQp-n1-cWW"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="leftSlideBtnClick:" destination="cWF-li-v1N" eventType="touchUpInside" id="PvN-52-zIN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2cR-qS-4mJ" firstAttribute="centerY" secondItem="2yg-eH-7VZ" secondAttribute="centerY" id="BLd-7F-11n"/>
+                            <constraint firstItem="JPk-31-BZc" firstAttribute="leading" secondItem="8NH-Vv-VJu" secondAttribute="leading" constant="19" id="KUs-Q8-nl6"/>
+                            <constraint firstItem="cAK-tH-QOT" firstAttribute="centerY" secondItem="2yg-eH-7VZ" secondAttribute="centerY" id="SVs-xE-k4x"/>
+                            <constraint firstItem="JPk-31-BZc" firstAttribute="centerY" secondItem="2yg-eH-7VZ" secondAttribute="centerY" id="VeN-Dr-oQ0"/>
+                            <constraint firstItem="2cR-qS-4mJ" firstAttribute="leading" secondItem="8NH-Vv-VJu" secondAttribute="leading" id="aez-b0-Lpb"/>
+                            <constraint firstItem="8NH-Vv-VJu" firstAttribute="trailing" secondItem="JPk-31-BZc" secondAttribute="trailing" constant="19" id="fsp-mz-e9l"/>
+                            <constraint firstItem="8NH-Vv-VJu" firstAttribute="trailing" secondItem="cAK-tH-QOT" secondAttribute="trailing" id="pQa-bs-c06"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8NH-Vv-VJu"/>
+                    </view>
+                    <connections>
+                        <outlet property="leftBtn" destination="2cR-qS-4mJ" id="0gG-nf-tCF"/>
+                        <outlet property="rightBtn" destination="cAK-tH-QOT" id="Z19-wp-4fJ"/>
+                        <outlet property="tisCV" destination="JPk-31-BZc" id="W6m-jU-PEb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tr2-ly-FrS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-226" y="-255"/>
+        </scene>
+    </scenes>
+</document>
